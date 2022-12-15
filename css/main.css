@@ -308,6 +308,34 @@ template {
   display: none;
 }
 
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../fonts/lato-v23-latin-regular.woff2") format("woff2"), url("../../fonts/lato-v23-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../../fonts/lato-v23-latin-700.woff2") format("woff2"), url("../../fonts/lato-v23-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../../fonts/montserrat-v25-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 *,
 *::before,
 *::after {
@@ -317,7 +345,8 @@ template {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  width: 1440px;
 }
 
 img {
@@ -345,8 +374,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 10px;
 }/*# sourceMappingURL=main.css.map */
