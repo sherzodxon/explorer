@@ -343,7 +343,7 @@ template {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   width: 1440px;
@@ -358,8 +358,19 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -373,8 +384,204 @@ h1, h2, h3, h4, p {
   width: 1px;
 }
 
+.site-background {
+  background-image: url(/img/background1.jpg);
+  color: #fff;
+  background-size: cover;
+}
+
 .container {
   max-width: 950px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.header {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.header-nav-list {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 39px;
+  width: 568px;
+  padding-bottom: 58px;
+}
+
+.header-nav-item {
+  padding-bottom: 14px;
+}
+.header-nav-item:nth-child(1) {
+  margin-right: 24px;
+}
+.header-nav-item:nth-child(2) {
+  margin-right: 24px;
+}
+.header-nav-item:nth-child(3) {
+  margin-right: 24px;
+}
+.header-nav-item:nth-child(4) {
+  margin-right: 44px;
+}
+.header-nav-item:nth-child(5) {
+  margin-right: 24px;
+}
+
+.header-nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 1.2999999523px;
+  text-align: left;
+  padding-bottom: 14px;
+  border-bottom: 2px solid transparent;
+}
+.header-nav-link:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.posts-list {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: black;
+}
+
+.posts-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+.posts-item::after {
+  width: 60px;
+  height: 25px;
+  content: "travel";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-size: 8px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  top: 21px;
+  right: 21px;
+}
+.posts-item:nth-child(1) .posts-bg {
+  background: url(../../img/post1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.posts-item:nth-child(2)::after {
+  content: "";
+  display: none;
+}
+.posts-item:nth-child(2) .posts-bg {
+  background: url(../../img/post2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.posts-item:nth-child(3) {
+  margin-bottom: 0px;
+  padding-bottom: 32px;
+}
+.posts-item:nth-child(3)::after {
+  content: "Photography";
+  width: 102px;
+}
+.posts-item:nth-child(3) .posts-bg {
+  background: url(../../img/post3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.posts-bg {
+  padding: 160px 237px 40px 60px;
+  color: #fff;
+}
+
+.posts-user-wrapper {
+  display: flex;
+}
+
+.posts-user-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+  border-radius: 4px;
+}
+
+.posts-user-name {
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.posts-user-date {
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.posts-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  margin-top: 20px;
+}
+
+.posts-item-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+  margin-top: 36px;
+  margin-left: 60px;
+  width: 660px;
+  margin-bottom: 5px;
+}
+
+.posts-item-link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #8D4FDB;
+  margin-left: 60px;
+}
+
+.posts-read {
+  padding-top: 49px;
+  padding-bottom: 67px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(241, 241, 241);
+}
+
+.posts-read-text {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: #333333;
+  margin-bottom: 29px;
+}
+
+.posts-read-link {
+  font-size: 10px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 16px 28px;
+  background: rgb(141, 79, 219);
+  border-radius: 3px;
 }/*# sourceMappingURL=main.css.map */
